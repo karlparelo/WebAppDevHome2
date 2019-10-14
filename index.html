@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="logic.js"></script>
+    <script type="text/javascript" src="res/js/logic.js"></script>
+    <script type="text/javascript" src="res/js/Course.js"></script>
+    <script type="text/javascript" src="res/js/User.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="res/images/favicon.ico">
@@ -23,15 +25,13 @@
                         <div class="avatar">
                             <img src="res/images/me.png" id="picture" alt="My picture">
                         </div>
-                        <div class="info">
-                            <ul>
-                                <li id="name">John Doe</li>
-                                <li id="birthdate">11/10/1990</li>
-                                <li id="faculty">Software Engineering</li>
+                        <div >
+                            <ul id="info">
+
                             </ul>
                         </div>
                         <div id="gpa">
-                            <strong>2.75</strong>
+                            <strong>2.2</strong>
                         </div>
                         <div class="clear-fix"></div>
                     </div>
@@ -47,31 +47,7 @@
                             <th>Grade</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Agile software development</td>
-                            <td>1</td>
-                            <td>82</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>System modeling</td>
-                            <td>1</td>
-                            <td>85</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Object-oriented programming</td>
-                            <td>2</td>
-                            <td>99</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Estonian language Level A2</td>
-                            <td>2</td>
-                            <td>65</td>
-                        </tr>
+                        <tbody id="listBody">
                         </tbody>
                     </table>
                     <br>
